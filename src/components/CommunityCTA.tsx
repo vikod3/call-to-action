@@ -11,7 +11,7 @@ const avatars = [
 
 export const CommunityCTA: React.FC = () => {
   return (
-    <div className="relative min-h-[600px] flex items-center justify-start py-20 px-8 sm:px-16 overflow-hidden font-sans">
+    <div className="relative w-full max-w-7xl mx-auto rounded-[2rem] min-h-[600px] flex items-center justify-start py-20 px-8 sm:px-16 overflow-hidden font-sans shadow-2xl">
       {/* Background Image with subtle overlay for texture */}
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
