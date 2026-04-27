@@ -11,7 +11,7 @@ const avatars = [
 
 export const CommunityCTA: React.FC = () => {
   return (
-    <div className="relative w-full max-w-7xl mx-auto rounded-[2rem] min-h-[600px] flex items-center justify-start py-20 px-8 sm:px-16 overflow-hidden font-sans shadow-2xl">
+    <div className="relative w-full max-w-7xl mx-auto rounded-[2rem] min-h-[500px] flex items-center justify-start py-20 px-8 sm:px-16 overflow-hidden font-sans shadow-lg">
       {/* Background Image with subtle overlay for texture */}
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
@@ -28,7 +28,7 @@ export const CommunityCTA: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
         >
-          <h2 id="cta-title" className="text-[42px] sm:text-[48px] font-extrabold tracking-[-0.03em] leading-[1.1] mb-6 text-[#1a1f3d]">
+          <h2 id="cta-title" className="text-[32px] sm:text-[38px] font-bold tracking-[-0.03em] leading-[1.1] mb-4 text-[#1a1f3d]">
             Subscribe to Our Community
           </h2>
         </motion.div>
@@ -38,8 +38,10 @@ export const CommunityCTA: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
         >
-          <p id="cta-description" className="text-[17px] sm:text-[19px] text-[#4b5563] font-medium leading-[1.6] mb-9 max-w-2xl opacity-80">
-            Get exclusive access to cutting-edge tech insights, industry trends, and expert advice delivered straight to your inbox. Join our growing community today!
+          <p id="cta-description" className="text-[17px] sm:text-[19px] text-[#1a1f3d] font-medium leading-[1.5] mb-9 max-w-2xl opacity-60">
+            Get exclusive access to cutting-edge tech insights,<br />
+            industry trends, and expert advice delivered straight<br />
+            to your inbox. Join our growing community today!
           </p>
         </motion.div>
 
@@ -49,17 +51,17 @@ export const CommunityCTA: React.FC = () => {
           transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="flex flex-col sm:flex-row gap-3 mb-10"
         >
-          <div className="flex-1 relative group">
+          <div className="flex-1 relative group max-w-md">
             <input
               id="cta-email-input"
               type="email"
               placeholder="Enter your email here"
-              className="w-full bg-white border-0 rounded-full px-8 py-4 text-[#1a1f3d] placeholder:text-neutral-400 focus:outline-none focus:ring-4 focus:ring-[#1a1f3d]/5 transition-all text-[16px] shadow-sm shadow-black/5"
+              className="w-full bg-white border-0 rounded-full px-8 py-4 text-[#1a1f3d] placeholder:text-neutral-400 placeholder:font-semibold focus:outline-none focus:ring-4 focus:ring-[#1a1f3d]/5 transition-all text-[18px] shadow-sm shadow-black/5"
             />
           </div>
           <button
             id="cta-join-button"
-            className="bg-white text-[#1a1f3d] hover:bg-neutral-50 active:scale-95 transition-all rounded-full px-10 py-4 font-bold text-[16px] whitespace-nowrap shadow-sm shadow-black/5"
+            className="bg-white text-[#1a1f3d] hover:bg-neutral-50 active:scale-95 transition-all rounded-full px-8 py-4 font-bold text-[16px] whitespace-nowrap shadow-sm shadow-black/5"
           >
             Join Now
           </button>
